@@ -2,8 +2,8 @@
 //! Static caches 
 const CACHE_NAME = "Static_1";
 const precachedResources = [
-  "/offlinePWA/",
-  "/offlinePWA/index.html",
+  "/",
+  "/index.html",
 ];
 
 //! Cache
