@@ -6,7 +6,7 @@ import Layout from './component/Layout';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:"black", width:"100%" ,height:"100%"}}>
     <Layout />
     </div>
   );

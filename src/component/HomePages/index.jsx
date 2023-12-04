@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom'
 function HomePages() {
     const navigate=useNavigate()
   return (
-    <div>HomePage
+    <div style={{backgroundColor:"black", width:"100%" ,height:"100%"}}>
+    HomePage
 <button style={{width:"80px", height:"40px" , backgroundColor:"red"}} onClick={()=>navigate("/home")}>go</button>
     </div>
   )
