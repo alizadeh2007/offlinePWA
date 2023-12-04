@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 //! Static caches 
-const CACHE_NAME = "Static_6";
+const CACHE_NAME = "Static_7";
 const precachedResources = [
   '/static/media/logo.103b5fa18196d5665a7e12318285c916.svg',
   "/",
