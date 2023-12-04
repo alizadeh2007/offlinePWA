@@ -2,8 +2,6 @@
 //! Static caches 
 const CACHE_NAME = "Static_5";
 const precachedResources = [
-  "/offlinePWA/",
-  "/offlinePWA/index.html",
   "/offlinePWA/static/media/circles.fbbfe33606835357a1d59a4f67096356.svg",
   "/offlinePWA/static/media/three-dots.d495cf010a1763f1c105db06e1baa5c8.svg",
   "/offlinePWA/static/media/Discover.f6e626a675dedff1c43f65bd150dc637.svg",
@@ -15,6 +13,8 @@ const precachedResources = [
   "/offlinePWA/static/media/selectSex.176a94a80b9f25b1e4dc7be32a6f4fb5.svg",
   "/offlinePWA/static/media/three-dots.d495cf010a1763f1c105db06e1baa5c8.svg",
   "/offlinePWA/static/media/YourMuscleAge.aee3bfd345144de1bce957bb54441b5d.svg",
+  "/offlinePWA/",
+  "/offlinePWA/index.html",
 ];
 
 //! Cache
