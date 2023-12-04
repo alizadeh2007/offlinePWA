@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 //! Static caches 
-const CACHE_NAME = "Static_5";
+const CACHE_NAME = "Static_6";
 const precachedResources = [
   "/offlinePWA/static/media/circles.fbbfe33606835357a1d59a4f67096356.svg",
   "/offlinePWA/static/media/three-dots.d495cf010a1763f1c105db06e1baa5c8.svg",
