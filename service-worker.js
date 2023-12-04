@@ -10,7 +10,7 @@ const precachedResources = [
   "/offlinePWA/static/media/play.9a6005b5efd5bf1592a599cbb2909e97.svg",
   "/offlinePWA/static/media/Result.54943f038ccfe6c7731aab221e3f16fb.svg",
   "/offlinePWA/static/media/ResultGermany.b3ad8bea018c29aae887f812efe2b944.svg",
-  "/offlinePWA/static/media/selectSex.176a94a80b9f25b1e4dc7be32a6f4fb5.svg",
+  // "/offlinePWA/static/media/selectSex.176a94a80b9f25b1e4dc7be32a6f4fb5.svg",
   "/offlinePWA/static/media/YourMuscleAge.aee3bfd345144de1bce957bb54441b5d.svg",
   "/offlinePWA/",
   "/offlinePWA/index.html",
