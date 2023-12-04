@@ -4,6 +4,8 @@ const CACHE_NAME = "Static_1";
 const precachedResources = [
   "/offlinePWA/",
   "/offlinePWA/index.html",
+  "/static/media/circles.fbbfe33606835357a1d59a4f67096356.svg",
+  "/static/media/three-dots.d495cf010a1763f1c105db06e1baa5c8.svg"
 ];
 
 //! Cache
