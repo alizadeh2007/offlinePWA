@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Icon icon="material-symbols:10k-outline-rounded" />
         <p>
-          Hi there
+          Hi theress
         </p>
         <a
           className="App-link"
