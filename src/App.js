@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Icon icon="material-symbols:10k-outline-rounded" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hi there
         </p>
         <a
           className="App-link"
