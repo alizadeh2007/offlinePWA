@@ -11,6 +11,9 @@ import iconss8 from "./../../New folder/others/ResultGermany.svg"
 import iconss9 from "./../../New folder/others/YourMuscleAge.svg"
 import iconss99 from "./../../New folder/others/play.svg"
 import iconss999 from "./../../New folder/others/YourMuscleAge.svg"
+import iconss9990 from "./../../New folder/man.svg"
+// import iconss9999 from "./../../New folder/tik.svg"
+// import iconss99999 from "./../../New folder/woman.svg"
 
 function Home() {
   return (
@@ -29,6 +32,7 @@ function Home() {
     <img src={iconss9}/>
     <img src={iconss99}/>
     <img src={iconss999}/>
+    <img src={iconss9990}/>
     </div>
   )
 }
