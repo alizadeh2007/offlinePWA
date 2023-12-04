@@ -12,7 +12,7 @@ import iconss9 from "./../../New folder/others/YourMuscleAge.svg"
 import iconss99 from "./../../New folder/others/play.svg"
 import iconss999 from "./../../New folder/others/YourMuscleAge.svg"
 import iconss9990 from "./../../New folder/man.svg"
-// import iconss9999 from "./../../New folder/tik.svg"
+import iconss9999 from "./../../New folder/tik.svg"
 // import iconss99999 from "./../../New folder/woman.svg"
 
 function Home() {
@@ -33,6 +33,7 @@ function Home() {
     <img src={iconss99}/>
     <img src={iconss999}/>
     <img src={iconss9990}/>
+    <img src={iconss9999}/>
     </div>
   )
 }
