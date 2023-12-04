@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Icon } from '@iconify/react';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Icon icon="material-symbols:10k-outline-rounded" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
