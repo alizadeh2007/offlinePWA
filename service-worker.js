@@ -11,6 +11,7 @@ const precachedResources = [
   "/offlinePWA/static/media/Result.54943f038ccfe6c7731aab221e3f16fb.svg",
   "/offlinePWA/static/media/ResultGermany.b3ad8bea018c29aae887f812efe2b944.svg",
   // "/offlinePWA/static/media/selectSex.176a94a80b9f25b1e4dc7be32a6f4fb5.svg"
+  "/offlinePWA/static/media/man.8a39e0c9782789d35b74af33ef7d06ff.svg",
   "/offlinePWA/static/media/YourMuscleAge.aee3bfd345144de1bce957bb54441b5d.svg",
   "/offlinePWA/",
   "/offlinePWA/index.html",
