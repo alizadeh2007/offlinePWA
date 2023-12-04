@@ -10,7 +10,7 @@ import iconss7 from "./../../New folder/others/Result.svg"
 import iconss8 from "./../../New folder/others/ResultGermany.svg"
 import iconss9 from "./../../New folder/others/YourMuscleAge.svg"
 import iconss99 from "./../../New folder/others/play.svg"
-import iconss999 from "./../../New folder/others/selectSex.svg"
+import iconss999 from "./../../New folder/others/YourMuscleAge.svg"
 
 function Home() {
   return (
