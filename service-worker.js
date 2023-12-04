@@ -4,7 +4,7 @@ const CACHE_NAME = "Static_5";
 const precachedResources = [
   "/offlinePWA/static/media/circles.fbbfe33606835357a1d59a4f67096356.svg",
   "/offlinePWA/static/media/three-dots.d495cf010a1763f1c105db06e1baa5c8.svg",
-  // "/offlinePWA/static/media/Discover.f6e626a675dedff1c43f65bd150dc637.svg",
+  "/offlinePWA/static/media/Discover.f6e626a675dedff1c43f65bd150dc637.svg",
   // "/offlinePWA/static/media/DiscoverGerman.11a816be63b32808b5bde4b2f89113ba.svg",
   // "/offlinePWA/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
   // "/offlinePWA/static/media/play.9a6005b5efd5bf1592a599cbb2909e97.svg",
