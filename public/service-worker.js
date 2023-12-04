@@ -1,9 +1,9 @@
 /* eslint-disable no-restricted-globals */
 //! Static caches 
-const CACHE_NAME = "Static_0";
+const CACHE_NAME = "Static_1";
 const precachedResources = [
-  "/",
-  "/index.html",
+  "/offlinePWA/",
+  "/offlinePWA/index.html",
 ];
 
 //! Cache
