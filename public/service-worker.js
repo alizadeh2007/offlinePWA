@@ -10,7 +10,7 @@ const precachedResources = [
   "/offlinePWA/static/media/play.9a6005b5efd5bf1592a599cbb2909e97.svg",
   "/offlinePWA/static/media/Result.54943f038ccfe6c7731aab221e3f16fb.svg",
   "/offlinePWA/static/media/ResultGermany.b3ad8bea018c29aae887f812efe2b944.svg",
-  // "/offlinePWA/static/media/selectSex.176a94a80b9f25b1e4dc7be32a6f4fb5.svg",
+  "/offlinePWA/static/media/selectSex.176a94a80b9f25b1e4dc7be32a6f4fb5.svg",
   "/offlinePWA/static/media/man.8a39e0c9782789d35b74af33ef7d06ff.svg",
   "/offlinePWA/static/media/YourMuscleAge.aee3bfd345144de1bce957bb54441b5d.svg",
   "/offlinePWA/static/media/tik.26e655b9248266a1a06cf8fbe5b1ce07.svg",
@@ -20,14 +20,21 @@ const precachedResources = [
 
 //! Cache
 self.addEventListener("install", (event) => {
-   event.waitUntil((async () => {
-      const cache = await caches.open(CACHE_NAME);
-      return cache.addAll(precachedResources);
-   })());
+  event.waitUntil((async () => {
+    try {
+    const cache = await caches.open(CACHE_NAME);
+    return cache.addAll(precachedResources);
+  } catch (error) {
+      console.log("An error occured at the install service worker",error);
+  }
+  })());
 });
 
 //! Fetch and Updating | Dynamicy
 self.addEventListener('fetch', (event) => {
+  try {
+    
+
   const request = event.request;
 
   if (request.method !== 'POST' && request.url.startsWith('chrome-extension://')) {
@@ -52,6 +59,10 @@ self.addEventListener('fetch', (event) => {
       });
     })
   );
+} catch (error) {
+  console.log("An error occured at the fetch service worker",error);
+
+}
 });
 
 //! Activate 
