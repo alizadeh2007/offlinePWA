@@ -6,7 +6,7 @@
   "background_color": "#2196f3",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/offlinePWA",
+  "start_url": "/",
 "icons": [
   {
     "src":"./favicons/whiteBackgroundIcons/icon512x512.png",
