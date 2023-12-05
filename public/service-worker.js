@@ -21,21 +21,22 @@ const precachedResources = [
 //! Cache
 self.addEventListener("install", (event) => {
   event.waitUntil((async () => {
-    try {
-    const cache = await caches.open(CACHE_NAME);
-    let ckeck=true
-    precachedResources.forEach(path => {
-      ckeck= cache.add(path)
-      if(!ckeck){
-      console.log("path faild to install",path);
-      return false;
-    }
-    
-  });
-    return ckeck;
-  } catch (error) {
-      console.log("An error occured at the install service worker",error);
-  }
+   try {
+     const cache = await caches.open(CACHE_NAME);
+     const stack=[];
+     let check=true
+     precachedResources.forEach(path => {
+     stack.push(cache.add(path).catch((path)=>console.log(`can't load ${path} to cache`)))
+     check=cache.add(path)
+     if(!check || check===null || check===undefined){
+     console.log("path faild to install",path);
+   }
+   return Promise.all(stack);
+ })
+   return true;
+ } catch (error) {
+     console.log("An error occured at the install service worker",error);
+ }
   })());
 });
 
