@@ -60,7 +60,7 @@ self.addEventListener('fetch', (event) => {
       }
 
       // Fetch the resource and cache it
-      return fetch(request).then((fetchResponse) => {
+      return fetch(event.request).then((fetchResponse) => {
         return caches.open(CACHE_NAME).then((cache) => {
           cache.put(request, fetchResponse.clone());
           return fetchResponse;
