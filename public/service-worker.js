@@ -46,23 +46,23 @@ self.addEventListener('fetch', (event) => {
 
   const request = event.request;
 
-  if (event.request.method !== 'POST' && event.request.url.startsWith('chrome-extension://')) {
+  if (request.method !== 'POST' && request.url.startsWith('chrome-extension://')) {
     // Ignore requests with the 'chrome-extension' scheme
     return;
   }
 
   // Handle other requests as usual
   event.respondWith(
-    caches.match(event.request).then((response) => {
+    caches.match(request).then((response) => {
       // Return the cached response if found
       if (response) {
         return response;
       }
 
       // Fetch the resource and cache it
-      return fetch(event.request).then((fetchResponse) => {
+      return fetch(request).then((fetchResponse) => {
         return caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, fetchResponse.clone());
+          cache.put(request, fetchResponse.clone());
           return fetchResponse;
         });
       });
