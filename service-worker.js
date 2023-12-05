@@ -23,7 +23,16 @@ self.addEventListener("install", (event) => {
   event.waitUntil((async () => {
     try {
     const cache = await caches.open(CACHE_NAME);
-    return cache.addAll(precachedResources);
+    let ckeck=true
+    precachedResources.forEach(path => {
+      ckeck= cache.add(path)
+      if(!ckeck){
+      console.log("path faild to install",path);
+      return false;
+    }
+    
+  });
+    return ckeck;
   } catch (error) {
       console.log("An error occured at the install service worker",error);
   }
