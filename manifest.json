@@ -5,8 +5,8 @@
   "description": "The muscle age calculator can help you track your progress in your fitness goals.",
   "background_color": "#2196f3",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/offlinePWA+6+",
+  "start_url": "/offlinePWA+6+",
 "icons": [
   {
     "src":"./favicons/whiteBackgroundIcons/icon512x512.png",
